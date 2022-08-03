@@ -86,8 +86,6 @@ if __name__=="__main__":
 
     args = mlm_parser.parse_args()
 
-
-
     text = read_file(args.filename)
     input_text = mlm_preprocessing(text)
     model = train(input_text)
