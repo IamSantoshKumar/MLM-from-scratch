@@ -7,4 +7,4 @@
       python training.py --filename clean.txt --HOME_DIR ./
 
 ## Gradio app demo:
-  HuggingFace Spaces App Demo: https://huggingface.co/spaces/EuroPython2022/Mask-Language-Modeling-Using-Pytorch
+  HuggingFace Spaces App Demo: https://huggingface.co/spaces/ShAnSantosh/MaskLanguageModeling-Demo
