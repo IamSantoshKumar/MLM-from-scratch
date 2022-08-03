@@ -2,7 +2,7 @@
     Masked language modeling is the task of masking some of the words in a sentence and predicting which words should replace those masks
 
 
-## mlm training:
+## Usage:
 
       python training.py --filename clean.txt --HOME_DIR ./
 
