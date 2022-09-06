@@ -27,7 +27,7 @@ def mlm_preprocessing(text):
     selection =list()
     inputs = tokenizer(text, return_tensors="pt", max_length=config.CONFIG.max_length, padding="max_length", truncation=True)
     inputs['labels'] = inputs.input_ids.detach().clone()
-    rand = (torch.rand(inputs.input_ids.shape)>config.CONFIG.mask_proba)
+    rand = (torch.rand(inputs.input_ids.shape)<config.CONFIG.mask_proba)
     mask_arr = rand * (inputs.input_ids!=101) * (inputs.input_ids!=102) * (inputs.input_ids!=0)
     for i in range(mask_arr.shape[0]):
         selection.append(
